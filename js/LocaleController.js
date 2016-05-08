@@ -1,0 +1,1 @@
+function isJapan(){navigator.geolocation.getCurrentPosition(function(t){var o=t.coords.latitude,n=t.coords.longitude;o>=20&&46>=o&&n>=122&&146>=n&&(window.location.href="http://sky-warp.com/ja")})}$(document).ready(function(){setTimeout(function(){var t=document.getElementsByTagName("html")[0].getAttribute("lang");"ja"!=t&&isJapan()},45e3)});
